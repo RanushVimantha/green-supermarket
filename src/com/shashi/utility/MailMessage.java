@@ -7,7 +7,7 @@ public class MailMessage {
 		String recipient = emailId;
 		String subject = "Registration Successfull";
 		String htmlTextMessage = "<html><body style='font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; color: #333; padding: 20px; margin: 0;'>"
-			    + "<h2 style='color: rgb(95, 218, 95); margin-bottom: 20px;'>🌿 Welcome to Green Supermarket</h2>"
+			    + "<h2 style='color: rgb(95, 218, 95); margin-bottom: 20px;'>Welcome to Green Supermarket</h2>"
 			    + "<p style='font-size: 16px;'>Hi " + name + ",</p>"
 			    + "<p style='font-size: 16px; margin-bottom: 20px;'>Thank you for choosing Green Supermarket. We're thrilled to have you join our community!</p>"
 			    + "<p style='font-size: 16px; margin-bottom: 20px;'>Explore our latest assortment of high-quality goods, products, and commodities on our beautifully designed platform.</p>"
@@ -28,18 +28,17 @@ public class MailMessage {
 
 	public static void transactionSuccess(String recipientEmail, String name, String transId, double transAmount) {
 		String recipient = recipientEmail;
-		String subject = "Order Placed at Ellison Electronics";
-		String htmlTextMessage = "<html>" + "  <body>" + "    <p>" + "      Hey " + name + ",<br/><br/>"
-				+ "      We are glad that you shop with Ellison Electronics!" + "      <br/><br/>"
-				+ "      Your order has been placed successfully and under process to be shipped."
-				+ "<br/><h6>Please Note that this is a demo projet Email and you have not made any real transaction with us till now!</h6>"
-				+ "      <br/>" + "      Here is Your Transaction Details:<br/>" + "      <br/>"
-				+ "      <font style=\"color:red;font-weight:bold;\">Order Id:</font>"
-				+ "      <font style=\"color:green;font-weight:bold;\">" + transId + "</font><br/>" + "      <br/>"
-				+ "      <font style=\"color:red;font-weight:bold;\">Amount Paid:</font> <font style=\"color:green;font-weight:bold;\">"
-				+ transAmount + "</font>" + "      <br/><br/>" + "      Thanks for shopping with us!<br/><br/>"
-				+ "      Come Shop Again! <br/<br/> <font style=\"color:green;font-weight:bold;\">Ellison Electronics.</font>"
-				+ "    </p>" + "    " + "  </body>" + "</html>";
+		String subject = "Order Placed at Green Supermarket";
+		String htmlTextMessage = "<html><body style='font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; color: #333; padding: 20px; margin: 0;'>"
+			    + "<p style='font-size: 16px;'>Hey " + name + ",<br/><br/>"
+			    + "We are delighted that you chose to shop with Green Supermarket!<br/><br/>"
+			    + "Your order has been successfully placed and is currently being processed for shipment."
+			    + "<br/>Here are your transaction details:<br/><br/>"
+			    + "<span style='color: red; font-weight: bold;'>Order Id:</span> <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + transId + "</span><br/><br/>"
+			    + "<span style='color: red; font-weight: bold;'>Amount Paid:</span> <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + transAmount + "</span>"
+			    + "<br/><br/>Thanks for choosing Green Supermarket!<br/><br/>"
+			    + "Come shop again!<br/><span style='color: rgb(95, 218, 95); font-weight: bold;'>Green Supermarket</span>"
+			    + "</p></body></html>";
 
 		try {
 			JavaMailUtil.sendMail(recipient, subject, htmlTextMessage);
@@ -50,18 +49,19 @@ public class MailMessage {
 
 	public static void orderShipped(String recipientEmail, String name, String transId, double transAmount) {
 		String recipient = recipientEmail;
-		String subject = "Hurray!!, Your Order has been Shipped from Ellison Electronics";
-		String htmlTextMessage = "<html>" + "  <body>" + "    <p>" + "      Hey " + name + ",<br/><br/>"
-				+ "      We are glad that you shop with Ellison Electronics!" + "      <br/><br/>"
-				+ "      Your order has been shipped successfully and on the way to be delivered."
-				+ "<br/><h6>Please Note that this is a demo projet Email and you have not made any real transaction with us till now!</h6>"
-				+ "      <br/>" + "      Here is Your Transaction Details:<br/>" + "      <br/>"
-				+ "      <font style=\"color:red;font-weight:bold;\">Order Id:</font>"
-				+ "      <font style=\"color:green;font-weight:bold;\">" + transId + "</font><br/>" + "      <br/>"
-				+ "      <font style=\"color:red;font-weight:bold;\">Amount Paid:</font> <font style=\"color:green;font-weight:bold;\">"
-				+ transAmount + "</font>" + "      <br/><br/>" + "      Thanks for shopping with us!<br/><br/>"
-				+ "      Come Shop Again! <br/<br/> <font style=\"color:green;font-weight:bold;\">Ellison Electronics.</font>"
-				+ "    </p>" + "    " + "  </body>" + "</html>";
+		String subject = "Your Order has been Shipped from Green Supermarket";
+		String htmlTextMessage = "<html><body style='font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; color: #333; padding: 20px; margin: 0;'>"
+			    + "<p style='font-size: 16px;'>Hey " + name + ",<br/><br/>"
+			    + "We're thrilled that you chose to shop with Green Supermarket!<br/><br/>"
+			    + "Exciting news! Your order has been successfully shipped and is on its way to be delivered soon."
+			    + "<br/>Here are your transaction details:<br/><br/>"
+			    + "<span style='color: red; font-weight: bold;'>Order Id:</span> <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + transId + "</span><br/><br/>"
+			    + "<span style='color: red; font-weight: bold;'>Amount Paid:</span> <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + transAmount + "</span>"
+			    + "<br/><br/>Thanks for choosing Green Supermarket!<br/><br/>"
+			    + "Your satisfaction is our priority. Should you have any questions or need assistance, feel free to reach out.<br/><br/>"
+			    + "Come shop again!<br/><span style='color: rgb(95, 218, 95); font-weight: bold;'>Green Supermarket</span>"
+			    + "</p></body></html>";
+
 
 		try {
 			JavaMailUtil.sendMail(recipient, subject, htmlTextMessage);
@@ -72,23 +72,21 @@ public class MailMessage {
 
 	public static void productAvailableNow(String recipientEmail, String name, String prodName, String prodId) {
 		String recipient = recipientEmail;
-		String subject = "Product " + prodName + " is Now Available at Ellison Electronics";
-		String htmlTextMessage = "<html>" + "  <body>" + "    <p>" + "      Hey " + name + ",<br/><br/>"
-				+ "      We are glad that you shop with Ellison Electronics!" + "      <br/><br/>"
-				+ "      As per your recent browsing history, we seen that you were searching for an item that was not available in sufficient amount"
-				+ " at that time. <br/><br/>"
-				+ "We are glad to say that the product named <font style=\"color:green;font-weight:bold;\">" + prodName
-				+ "</font> with " + "product Id <font style=\"color:green;font-weight:bold;\">" + prodId
-				+ "</font> is now available to shop in our store!"
-				+ "<br/><h6>Please Note that this is a demo projet Email and you have not made any real transaction with us and not ordered anything till now!</h6>"
-				+ "      <br/>" + "      Here is The product detail which is now available to shop:<br/>"
-				+ "      <br/>"
-				+ "      <font style=\"color:red;font-weight:bold;\">Product Id: </font><font style=\"color:green;font-weight:bold;\">"
-				+ prodId + " " + "      </font><br/>" + "      <br/>"
-				+ "      <font style=\"color:red;font-weight:bold;\">Product Name: </font> <font style=\"color:green;font-weight:bold;\">"
-				+ prodName + "</font>" + "      <br/><br/>" + "      Thanks for shopping with us!<br/><br/>"
-				+ "      Come Shop Again! <br/<br/><br/> <font style=\"color:green;font-weight:bold;\">Ellison Electronics.</font>"
-				+ "    </p>" + "    " + "  </body>" + "</html>";
+		String subject = "Product " + prodName + " is Now Available at Green Supermarket";
+		String htmlTextMessage = "<html><body style='font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; color: #333; padding: 20px; margin: 0;'>"
+			    + "<p style='font-size: 16px;'>Hey " + name + ",<br/><br/>"
+			    + "We're delighted that you choose to shop with Green Supermarket!<br/><br/>"
+			    + "Based on your recent browsing history, it seems you were searching for an item that was not available in sufficient quantity at that time."
+			    + "<br/><br/>"
+			    + "Great news! The product named <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + prodName + "</span> with "
+			    + "Product Id <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + prodId + "</span> is now available in our store!"
+			    + "<br/>Here are the details of the product now available for you to shop:<br/><br/>"
+			    + "<span style='color: red; font-weight: bold;'>Product Id:</span> <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + prodId + "</span><br/><br/>"
+			    + "<span style='color: red; font-weight: bold;'>Product Name:</span> <span style='color: rgb(95, 218, 95); font-weight: bold;'>" + prodName + "</span>"
+			    + "<br/><br/>Thanks for considering Green Supermarket!<br/><br/>"
+			    + "We look forward to serving you again!<br/><br/><span style='color: rgb(95, 218, 95); font-weight: bold;'>Green Supermarket</span>"
+			    + "</p></body></html>";
+
 
 		try {
 			JavaMailUtil.sendMail(recipient, subject, htmlTextMessage);
@@ -102,7 +100,7 @@ public class MailMessage {
 			JavaMailUtil.sendMail(toEmailId, subject, htmlTextMessage);
 		} catch (MessagingException e) {
 			e.printStackTrace();
-			return "FAILURE";
+			return "System Failed To Send the Email";
 		}
 		return "SUCCESS";
 	}
