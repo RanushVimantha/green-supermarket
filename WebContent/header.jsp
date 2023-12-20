@@ -66,7 +66,7 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="index.jsp?type=mobile">Mobiles</a></li>
+							<li><a href="index.jsp?type=Groceries">Groceries</a></li>
 							<li><a href="index.jsp?type=tv">TVs</a></li>
 							<li><a href="index.jsp?type=laptop">Laptops</a></li>
 							<li><a href="index.jsp?type=camera">Camera</a></li>
@@ -157,7 +157,7 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="adminViewProduct.jsp?type=mobile">Mobiles</a></li>
+							<li><a href="adminViewProduct.jsp?type=Groceries">Groceries</a></li>
 							<li><a href="adminViewProduct.jsp?type=tv">Tvs</a></li>
 							<li><a href="adminViewProduct.jsp?type=laptop">Laptops</a></li>
 							<li><a href="adminViewProduct.jsp?type=camera">Camera</a></li>
