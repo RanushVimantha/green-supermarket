@@ -23,7 +23,7 @@
 	<div class="container-fluid text-center"
 		style="margin-top: 45px; background-color: #33cc33; color: white; padding: 5px;">
 		<h2>Green Supermarket</h2>
-		<h6>We specialize in Electronics</h6>
+		<h6>Our deals are as juicy as our fruits!</h6>
 		<form class="form-inline" action="index.jsp" method="get">
 			<div class="input-group">
 				<input type="text" class="form-control" size="50" name="search"
@@ -67,11 +67,12 @@
 					</a>
 						<ul class="dropdown-menu">
 							<li><a href="index.jsp?type=Groceries">Groceries</a></li>
-							<li><a href="index.jsp?type=tv">TVs</a></li>
-							<li><a href="index.jsp?type=laptop">Laptops</a></li>
-							<li><a href="index.jsp?type=camera">Camera</a></li>
-							<li><a href="index.jsp?type=speaker">Speakers</a></li>
-							<li><a href="index.jsp?type=tablet">Tablets</a></li>
+							<li><a href="index.jsp?type=DairyandEggs">Dairy and Eggs</a></li>
+							<li><a href="index.jsp?type=FrozenFoods">Frozen Foods</a></li>
+							<li><a href="index.jsp?type=Beverages">Beverages</a></li>
+							<li><a href="index.jsp?type=Snacks">Snacks</a></li>
+							<li><a href="index.jsp?type=PersonalCare">Personal Care</a></li>
+							<li><a href="index.jsp?type=CleaningSupplies">Cleaning Supplies</a></li>
 						</ul></li>
 				</ul>
 			</div>
@@ -103,12 +104,13 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="userHome.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="userHome.jsp?type=tv">TV</a></li>
-							<li><a href="userHome.jsp?type=laptop">Laptops</a></li>
-							<li><a href="userHome.jsp?type=camera">Camera</a></li>
-							<li><a href="userHome.jsp?type=speaker">Speakers</a></li>
-							<li><a href="userHome.jsp?type=tablet">Tablets</a></li>
+							<li><a href="userHome.jsp?type=Groceries">Groceries</a></li>
+							<li><a href="userHome.jsp?type=DairyandEggs">Dairy and Eggs</a></li>
+							<li><a href="userHome.jsp?type=FrozenFoods">Frozen Foods</a></li>
+							<li><a href="userHome.jsp?type=Beverages">Beverages</a></li>
+							<li><a href="userHome.jsp?type=Snacks">Snacks</a></li>
+							<li><a href="userHome.jsp?type=PersonalCare">Personal Care</a></li>
+							<li><a href="userHome.jsp?type=CleaningSupplies">Cleaning Supplies</a></li>
 						</ul></li>
 					<%
 					if (notf == 0) {

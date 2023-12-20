@@ -40,7 +40,7 @@
 				<div></div>
 				<div class="row">
 					<div class="col-md-12 form-group">
-						<label for="last_name">Username</label> <input type="email"
+						<label for="last_name">User Email</label> <input type="email"
 							placeholder="Enter Username" name="username" class="form-control"
 							id="last_name" required>
 					</div>
