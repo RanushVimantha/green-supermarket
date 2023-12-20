@@ -66,7 +66,7 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="index.jsp?type=mobile">Mobiles</a></li>
+							<li><a href="index.jsp?type=Groceries">Groceries</a></li>
 							<li><a href="index.jsp?type=tv">TVs</a></li>
 							<li><a href="index.jsp?type=laptop">Laptops</a></li>
 							<li><a href="index.jsp?type=camera">Camera</a></li>
@@ -157,12 +157,13 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="adminViewProduct.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="adminViewProduct.jsp?type=tv">Tvs</a></li>
-							<li><a href="adminViewProduct.jsp?type=laptop">Laptops</a></li>
-							<li><a href="adminViewProduct.jsp?type=camera">Camera</a></li>
-							<li><a href="adminViewProduct.jsp?type=speaker">Speakers</a></li>
-							<li><a href="adminViewProduct.jsp?type=tablet">Tablets</a></li>
+							<li><a href="adminViewProduct.jsp?type=Groceries">Groceries</a></li>
+							<li><a href="adminViewProduct.jsp?type=DairyandEggs">Dairy and Eggs</a></li>
+							<li><a href="adminViewProduct.jsp?type=FrozenFoods">Frozen Foods</a></li>
+							<li><a href="adminViewProduct.jsp?type=Beverages">Beverages</a></li>
+							<li><a href="adminViewProduct.jsp?type=Snacks">Snacks</a></li>
+							<li><a href="adminViewProduct.jsp?type=PersonalCare">Personal Care</a></li>
+							<li><a href="adminViewProduct.jsp?type=CleaningSupplies">Cleaning Supplies</a></li>
 						</ul></li>
 					<li><a href="adminStock.jsp">Stock</a></li>
 					<li><a href="shippedItems.jsp">Shipped</a></li>
