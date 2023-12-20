@@ -73,7 +73,7 @@
 							<option value="Beverages">Beverages</option>
 							<option value="Snacks">Snacks</option>
 							<option value="PersonalCare">Personal Care</option>
-							<option value="CleaningSupplies">CleaningSupplies</option>
+							<option value="CleaningSupplies">Cleaning Supplies</option>
 						</select>
 					</div>
 				</div>

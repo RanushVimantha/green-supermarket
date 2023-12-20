@@ -59,7 +59,7 @@ button {
 }
 
 button:hover {
-	background-color: green;
+	background-color: #5fda5f;
 	color: white;
 	border: 1px solid red;
 	padding: 7px;
@@ -85,7 +85,7 @@ button:hover {
 }
 
 .jumbotron {
-	background-color: #33cc33; /*#f4511e; /* Orange */
+	background-color: #5fda5f; /*#f4511e; /* Orange */
 	color: #ffffff;
 }
 
@@ -97,7 +97,7 @@ button:hover {
 }
 
 .productname {
-	color: green;
+	color: #5fda5f;
 	font-size: 15px;
 	font-family: fantasy;
 }
