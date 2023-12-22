@@ -90,11 +90,7 @@ button:hover {
 }
 
 /*Handling the price tag*/
-.price {
-	color: red;
-	font-weight: bold;
-	font-size: 20px;
-}
+
 
 .productname {
 	color: #5fda5f;
@@ -107,7 +103,6 @@ button:hover {
 	/* text-align: center; */
 	font-size: 12px;
 }
-
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
 	.tab {

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+
+
+
+
+.card {
+  font-family: "Istok Web", sans-serif;
+  position: relative;
+  width: 18rem;
+  height: 460px;
+  background: #5fda5f;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.thumbnail::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background: #caebca;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.thumbnail:hover::before {
+  top: -70%;
+  transform: skewY(400deg);
+}
+
+.thumbnail::after {
+  content: "GREEN";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.8rem;
+  z-index: 1;
+}
+
+
+.price {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.thumbnail .buy {
+  position: relative;
+  top: 5rem;
+  opacity: 0;
+  padding: 0.6rem 1.8rem;
+  margin-top: 0.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  background: #ffffff;
+  border: 0px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.thumbnail:hover .buy {
+  top: 0;
+  opacity: 0.8;
+  color: #000000;
+}
+
+.thumbnail .remove {
+  position: relative;
+  top: 4rem;
+  opacity: 0;
+  padding: 0.6rem 1.8rem;
+  margin-top: 0.8rem;
+  color: #000000;
+  text-decoration: none;
+  background: #d77059;
+  border: 0px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.thumbnail:hover .remove {
+  top: 0;
+  opacity: 1;
+}
+
+.Product {
+  height: 17.5rem;
+  width: auto;
+}

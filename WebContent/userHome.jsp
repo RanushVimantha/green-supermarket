@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ellison Electronics</title>
+<title>Green SuperMarket</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -65,19 +65,19 @@
 			for (ProductBean product : products) {
 				int cartQty = new CartServiceImpl().getCartItemCount(userName, product.getProdId());
 			%>
-			<div class="col-sm-4" style='height: 350px;'>
-				<div class="thumbnail">
+			<div class="col-sm-4" style='height: 500px; width: 290px; justify-content: center;'>
+				<div class="thumbnail" style="position: relative; width: 100%; height: 460px; background: #5fda5f; border-radius: 20px; overflow: hidden; margin: 0% auto;">
 					<img src="./ShowImage?pid=<%=product.getProdId()%>" alt="Product"
-						style="height: 150px; max-width: 180px">
-					<p class="productname"><%=product.getProdName()%>
-					</p>
+						style="position: relative; width: auto; height: 230px; display: flex; justify-content: center; align-items: center; padding-top: 1.8rem; z-index: 1;">
+					<<h3 class="contentBox" style="position: relative; padding: 1.4rem; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 2; font-size: 1.8rem; color: white; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;"><%=product.getProdName()%>
+					</h3>
 					<%
 					String description = product.getProdInfo();
 					description = description.substring(0, Math.min(description.length(), 100));
 					%>
 					<p class="productinfo"><%=description%>..
 					</p>
-					<p class="price">
+					<p class="price" style="position: relative; padding: 1rem; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 2; font-size: 2rem; color: white; font-weight: 700; letter-spacing: 0.1rem;">
 						Rs
 						<%=product.getProdPrice()%>
 					</p>
@@ -87,20 +87,17 @@
 						%>
 						<button type="submit"
 							formaction="./AddtoCart?uid=<%=userName%>&pid=<%=product.getProdId()%>&pqty=1"
-							class="btn btn-success">Add to Cart</button>
-						&nbsp;&nbsp;&nbsp;
-						<button type="submit"
-							formaction="./AddtoCart?uid=<%=userName%>&pid=<%=product.getProdId()%>&pqty=1"
-							class="btn btn-primary">Buy Now</button>
+							class="buy">Add to Cart</button>
+
 						<%
 						} else {
 						%>
 						<button type="submit"
 							formaction="./AddtoCart?uid=<%=userName%>&pid=<%=product.getProdId()%>&pqty=0"
-							class="btn btn-danger">Remove From Cart</button>
+							class="remove">Remove From Cart</button>
 						&nbsp;&nbsp;&nbsp;
 						<button type="submit" formaction="cartDetails.jsp"
-							class="btn btn-success">Checkout</button>
+							class="buy">Checkout</button>
 						<%
 						}
 						%>
