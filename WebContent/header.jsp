@@ -21,7 +21,7 @@
 <body style="background-color: #E6F9E6;">
 	<!--Company Header Starting  -->
 	<div class="container-fluid text-center"
-		style="margin-top: 45px; background-color: #33cc33; color: white; padding: 5px;">
+		style="margin-top: 49px; background-color: #33cc33; color: white; padding: 5px;">
 		<h2>Green Supermarket</h2>
 		<h6>Our deals are as juicy as our fruits!</h6>
 		<form class="form-inline" action="index.jsp" method="get">
