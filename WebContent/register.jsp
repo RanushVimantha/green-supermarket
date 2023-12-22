@@ -6,28 +6,30 @@
 <title>Register</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/changes.css">
+<link rel="stylesheet" href="registration.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
 </head>
-<body style="background-color: #E6F9E6;">
-
-	<%@ include file="header.jsp"%>
+<body>
+    <%@ include file="header.jsp"%>
 	<%
 	String message = request.getParameter("message");
 	%>
-	<div class="container">
-		<div class="row"
-			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
-
-			<form action="./RegisterSrv" method="post"
-				class="col-md-6 col-md-offset-3"
-				style="border: 2px solid black; border-radius: 10px; background-color: #FFE5CC; padding: 10px;">
-				<div style="font-weight: bold;" class="text-center">
-					<h2 style="color: green;">Registration Form</h2>
-					<%
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Registration Form</h1>
+		<%
 					if (message != null) {
 					%>
 					<p style="color: blue;">
@@ -36,63 +38,49 @@
 					<%
 					}
 					%>
-				</div>
-				<div></div>
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label for="first_name">Name</label> <input type="text"
-							name="username" class="form-control" id="first_name"
-							name="first_name" required>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="#" method="post">
+					<input class="text" type="text" name="Username" placeholder="Username" required="">
+					<input class="text email" type="email" name="email" placeholder="Email" required="">
+					<input class="text" type="password" name="password" placeholder="Password" required="">
+					<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+						<div class="col-md-6 form-group">
+							<label for="last_name">Pin Code</label> <input type="number"
+								name="pincode" class="form-control" id="last_name"
+								name="last_name" required>
+						</div>
 					</div>
-					<div class="col-md-6 form-group">
-						<label for="last_name">Email</label> <input type="email"
-							name="email" class="form-control" id="last_name" name="last_name"
-							required>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="last_name">Address</label>
-					<textarea name="address" class="form-control" id="last_name"
-						name="last_name" required></textarea>
-				</div>
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label for="last_name">Mobile</label> <input type="number"
-							name="mobile" class="form-control" id="last_name"
-							name="last_name" required>
-					</div>
-					<div class="col-md-6 form-group">
-						<label for="last_name">Pin Code</label> <input type="number"
-							name="pincode" class="form-control" id="last_name"
-							name="last_name" required>
-					</div>
-
-				</div>
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label for="last_name">Password</label> <input type="password"
-							name="password" class="form-control" id="last_name"
-							name="last_name" required>
-					</div>
-					<div class="col-md-6 form-group">
-						<label for="last_name">Confirm Password</label> <input
-							type="password" name="confirmPassword" class="form-control"
-							id="last_name" name="last_name" required>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-md-6" style="margin-bottom: 2px;">
-						<button type="Reset" class="btn btn-danger">Reset</button>
-					</div>
-					<div class="col-md-6">
-						<button type="submit" class="btn btn-success">Register</button>
-					</div>
-				</div>
-			</form>
+					<input type="submit" value="SIGNUP">
+				</form>
+				<p>Don't have an Account? <a href="http://localhost:8080/shopping-cart/login.jsp"> Login Now!</a></p>
+			</div>
 		</div>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			<p>© All rights reserved | Design by group 84 <a href="https://colorlib.com/" target="_blank"></a></p>
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 	</div>
-
-
+	<!-- //main -->
 	<%@ include file="footer.html"%>
 </body>
 </html>
