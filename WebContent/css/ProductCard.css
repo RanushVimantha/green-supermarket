@@ -83,10 +83,9 @@
 
 .thumbnail .remove {
   position: relative;
-  top: 4rem;
+  top: -45px;
   opacity: 0;
   padding: 0.6rem 1.8rem;
-  margin-top: 0.8rem;
   color: #000000;
   text-decoration: none;
   background: #d77059;
@@ -97,9 +96,32 @@
 }
 
 .thumbnail:hover .remove {
-  top: 0;
+  top: -75px;
+  margin-top: -3rem;
   opacity: 1;
 }
+
+.thumbnail .checkout {
+  position: relative;
+  top: 5rem;
+  opacity: 0;
+  padding: 0.6rem 1.8rem;
+  margin-top: 0.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  background: #ffffff;
+  border: 0px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.thumbnail:hover .checkout {
+  top: -26px;
+  opacity: 0.8;
+  color: #000000;
+}
+
 
 .Product {
   height: 17.5rem;

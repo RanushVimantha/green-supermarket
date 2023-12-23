@@ -11,6 +11,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/changes.css">
+<link rel="stylesheet" href="css/ProductCard.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
@@ -69,14 +70,14 @@
 				<div class="thumbnail" style="position: relative; width: 100%; height: 460px; background: #5fda5f; border-radius: 20px; overflow: hidden; margin: 0% auto;">
 					<img src="./ShowImage?pid=<%=product.getProdId()%>" alt="Product"
 						style="position: relative; width: auto; height: 230px; display: flex; justify-content: center; align-items: center; padding-top: 1.8rem; z-index: 1;">
-					<<h3 class="contentBox" style="position: relative; padding: 1.4rem; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 2; font-size: 1.8rem; color: white; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;"><%=product.getProdName()%>
+					<h3 class="contentBox" style="position: relative; padding: 1.4rem; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 2; font-size: 1.8rem; color: white; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;"><%=product.getProdName()%>
 					</h3>
 					<%
 					String description = product.getProdInfo();
 					description = description.substring(0, Math.min(description.length(), 100));
 					%>
-					<p class="productinfo"><%=description%>..
-					</p>
+<%-- 					<p class="productinfo"><%=description%>.. --%>
+<!-- 					</p> -->
 					<p class="price" style="position: relative; padding: 1rem; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 2; font-size: 2rem; color: white; font-weight: 700; letter-spacing: 0.1rem;">
 						Rs
 						<%=product.getProdPrice()%>
@@ -97,7 +98,7 @@
 							class="remove">Remove From Cart</button>
 						&nbsp;&nbsp;&nbsp;
 						<button type="submit" formaction="cartDetails.jsp"
-							class="buy">Checkout</button>
+							class="checkout">Checkout</button>
 						<%
 						}
 						%>
