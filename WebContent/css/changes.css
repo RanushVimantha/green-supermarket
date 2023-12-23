@@ -1,107 +1,14 @@
 body {
 	background-color: #E6F9E6;
 }
-/* Add a dark background color with a little bit see-through */
-.navbar {
-	margin-bottom: 0;
-	background-color: #2d2d30;
-	border: 0;
-	font-size: 14px !important;
-	letter-spacing: 4px;
-	opacity: 0.9;
-}
 
-/* Add a gray color to all navbar links */
-.navbar li a, .navbar .navbar-brand {
-	color: #d5d5d5 !important;
-}
-
-/* On hover, the links will turn white */
-.navbar-nav li a:hover {
-	color: red !important;
-}
-
-/* The active link */
-.navbar-nav li.active a {
-	color: #fff !important;
-	background-color: #29292c !important;
-}
-
-/* Remove border color from the collapsible button */
-.navbar-default .navbar-toggle {
-	border-color: transparent;
-}
-
-/* Dropdown */
-.open .dropdown-toggle {
-	color: #fff;
-	background-color: #555 !important;
-}
-
-/* Dropdown links */
-.dropdown-menu li a {
-	color: #000 !important;
-}
-
-/* On hover, the dropdown links will turn red */
-.dropdown-menu li a:hover {
-	background-color: white !important;
-}
-
-/* Add a dark gray background color to the modal header and center text */
-button {
-	background-color: black;
-	color: white;
-	font-weight: bold;
-	border: 1px solid black;
-	padding: 7px;
-	border-radius: 5px;
-}
-
-button:hover {
-	background-color: #5fda5f;
-	color: white;
-	border: 1px solid red;
-	padding: 7px;
-	font-weight: bold;
-}
-
-.bg-1 {
-	background: #2d2d30;
-	color: #bdbdbd;
-}
-
-.bg-1 h3 {
-	color: #fff;
-}
-
-.bg-1 p {
-	font-style: italic;
-}
-
-.products {
-	background-color: #E6F9E6 !important;
-	padding: 20px;
-}
-
-.jumbotron {
-	background-color: #5fda5f; /*#f4511e; /* Orange */
-	color: #ffffff;
-}
-
-/*Handling the price tag*/
-
-
-.productname {
-	color: #5fda5f;
-	font-size: 15px;
-	font-family: fantasy;
-}
-
-.productinfo {
-	color: black;
-	/* text-align: center; */
-	font-size: 12px;
+.col-sm-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  width: 41.66666667%;
 }
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {

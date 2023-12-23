@@ -8,15 +8,10 @@
 <title>Green Supermarket</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/changes.css">
 <link rel="stylesheet" href="css/ProductCard.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
+
 <body style="background-color: #E6F9E6;">
 
 	<%
@@ -53,11 +48,14 @@
 	}
 	%>
 
-	<jsp:include page="header.jsp" />
+	<jsp:include page="header2.jsp" />
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 
 	<div class="text-center"
-		style="color: black; font-size: 14px; font-weight: bold;"><%=message%></div>
+		style="color: black; font-size: 20px; font-weight: bold; margin-top: 130px; margin-bottom: 35px"><%=message%></div>
 	<div class="text-center" id="message"
 		style="color: black; font-size: 14px; font-weight: bold;"></div>
 	<!-- Start of Product Items List -->
@@ -68,7 +66,7 @@
 			for (ProductBean product : products) {
 				int cartQty = new CartServiceImpl().getCartItemCount(userName, product.getProdId());
 			%>
-			<div class="col-sm-4" style='height: 500px; width: 290px; justify-content: center;'>
+			<div class="col-sm-5" style='height: 500px; width: 290px; justify-content: center;'>
 				<div class="thumbnail" style="position: relative; width: 100%; height: 460px; background: #5fda5f; border-radius: 20px; overflow: hidden; margin: 0% auto;">
 					<img src="./ShowImage?pid=<%=product.getProdId()%>" alt="Product"
 						style="position: relative; width: auto; height: 230px; display: flex; justify-content: center; align-items: center; padding-top: 1.8rem; z-index: 1;">
