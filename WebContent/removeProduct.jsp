@@ -3,6 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/nature-background-with-golden-foil_52683-46172.jpg?w=996&t=st=1703328659~exp=1703329259~hmac=72c62228a6422f10695cc73f53fc1d4fbb2ef2eea95cf89c0eafb689c94f4538'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
 <title>Remove Product</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,13 +52,13 @@
 			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
 			<form action="./RemoveProductSrv" method="post"
 				class="col-md-4 col-md-offset-4"
-				style="border: 2px solid black; border-radius: 10px; background-color: #FFE5CC; padding: 10px;">
+				style="border: 0px solid black; border-radius: 10px; background-color: transparent; padding: 10px;">
 				<div style="font-weight: bold;" class="text-center">
-					<h3 style="color: green;">Product Deletion Form</h3>
+					<h3 style="color: grey;">Product Deletion Form</h3>
 					<%
 					if (message != null) {
 					%>
-					<p style="color: blue;">
+					<p style="color: #5fda5f;">
 						<%=message%>
 					</p>
 					<%
@@ -60,19 +68,16 @@
 				<div></div>
 				<div class="row">
 					<div class="col-md-12 form-group">
-						<label for="last_name">Product Id</label> <input type="text"
+						<label for="last_name"></label> <input type="text"
 							placeholder="Enter Product Id" name="prodid" class="form-control"
 							id="last_name" required>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
-						<a href="adminViewProduct.jsp" class="btn btn-info">Cancel</a>
-					</div>
+				
 					<div class="col-md-6 text-center">
-						<button type="submit" class="btn btn-danger">Remove
-							Product</button>
-					</div>
+    <button type="submit" class="btn btn-danger" style="background-color: #5fda5f; color: white;">Remove Product</button>
+                 </div>
+
 				</div>
 			</form>
 		</div>

@@ -3,6 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/leaves-wallpaper-with-metallic-foil-concept_79603-942.jpg?w=996&t=st=1703328896~exp=1703329496~hmac=806ab9baf198116d629d4a7a40db5f7ee8551937b9cef8f5af9f09f3613d5fe4'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
 <title>Add Product</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,16 +49,16 @@
 	%>
 	<div class="container">
 		<div class="row"
-			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
+			style="margin-top: 3px; margin-left: 1px; margin-right: 1px;">
 			<form action="./AddProductSrv" method="post"
 				enctype="multipart/form-data" class="col-md-6 col-md-offset-3"
-				style="border: 2px solid black; border-radius: 10px; background-color: #FFE5CC; padding: 10px;">
+				style="border: 2px solid black; border-radius: 20px; background-color: transparent; padding: 30px;">
 				<div style="font-weight: bold;" class="text-center">
-					<h2 style="color: green;">Product Addition Form</h2>
+					<h2 style="color: grey;">Product Addition Form</h2>
 					<%
 					if (message != null) {
 					%>
-					<p style="color: blue;">
+					<p style="color: #5fda5f;">
 						<%=message%>
 					</p>
 					<%
@@ -60,53 +68,50 @@
 				<div></div>
 				<div class="row">
 					<div class="col-md-6 form-group">
-						<label for="last_name">Product Name</label> <input type="text"
-							placeholder="Enter Product Name" name="name" class="form-control"
-							id="last_name" required>
-					</div>
+    <label for="last_name">Product Name</label>
+    <input type="text" placeholder="Enter Product Name" name="name" class="form-control" id="last_name" style="background-color: ;" required>
+</div>
+
 					<div class="col-md-6 form-group">
-						<label for="producttype">Product Type</label> <select name="type"
-							id="producttype" class="form-control" required>
-							<option value="Groceries">Groceries</option>
-							<option value="DairyandEggs">Dairy and Eggs</option>
-							<option value="FrozenFoods">Frozen Foods</option>
-							<option value="Beverages">Beverages</option>
-							<option value="Snacks">Snacks</option>
-							<option value="PersonalCare">Personal Care</option>
-							<option value="CleaningSupplies">Cleaning Supplies</option>
-						</select>
-					</div>
-				</div>
+    <label for="producttype">Product Type</label>
+    <select name="type" id="producttype" class="form-control"  style="background-color: ;" required>
+        <option value="Groceries">Groceries</option>
+        <option value="DairyandEggs">Dairy and Eggs</option>
+        <option value="FrozenFoods">Frozen Foods</option>
+        <option value="Beverages">Beverages</option>
+        <option value="Snacks">Snacks</option>
+        <option value="PersonalCare">Personal Care</option>
+        <option value="CleaningSupplies">Cleaning Supplies</option>
+    </select>
+</div>
+
 				<div class="form-group">
-					<label for="last_name">Product Description</label>
-					<textarea name="info" class="form-control" id="last_name" required></textarea>
+        <label for="last_name">Product Description</label>
+        <textarea name="info" class="form-control" id="last_name" style=" ;" required></textarea>
+</div>
+
+<div class="row">
+    <div class="col-md-6 form-group">
+        <label for="last_name">Unit Price</label>
+        <input type="number" placeholder="Enter Unit Price" name="price" class="form-control" id="last_name" style="background-color:;" required>
+    </div>
+    <div class="col-md-6 form-group">
+        <label for="last_name">Stock Quantity</label>
+        <input type="number" placeholder="Enter Stock Quantity" name="quantity" class="form-control" id="last_name" style="background-color:;" required>
+    </div>
+</div>
+
+<div class="col-md-12 form-group">
+    <label for="last_name">Product Image</label>
+    <input type="file" placeholder="Select Image" name="image" class="form-control" id="last_name" style="background-color: ;" required>
+</div>
+
 				</div>
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label for="last_name">Unit Price</label> <input type="number"
-							placeholder="Enter Unit Price" name="price" class="form-control"
-							id="last_name" required>
-					</div>
-					<div class="col-md-6 form-group">
-						<label for="last_name">Stock Quantity</label> <input type="number"
-							placeholder="Enter Stock Quantity" name="quantity"
-							class="form-control" id="last_name" required>
-					</div>
-				</div>
-				<div>
-					<div class="col-md-12 form-group">
-						<label for="last_name">Product Image</label> <input type="file"
-							placeholder="Select Image" name="image" class="form-control"
-							id="last_name" required>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
-						<button type="reset" class="btn btn-danger">Reset</button>
-					</div>
+				
 					<div class="col-md-6 text-center">
-						<button type="submit" class="btn btn-success">Add Product</button>
-					</div>
+    <button type="submit" class="btn btn-success" style="background-color: #5fda5f; color: white;">Add Product</button>
+</div>
+
 				</div>
 			</form>
 		</div>

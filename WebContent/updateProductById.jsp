@@ -3,6 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/leaves-wallpaper-with-metallic-foil-concept_79603-942.jpg?w=996&t=st=1703328896~exp=1703329496~hmac=806ab9baf198116d629d4a7a40db5f7ee8551937b9cef8f5af9f09f3613d5fe4'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
 <title>Update Product</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,13 +49,13 @@
 			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
 			<form action="updateProduct.jsp" method="post"
 				class="col-md-4 col-md-offset-4"
-				style="border: 2px solid black; border-radius: 10px; background-color: #FFE5CC; padding: 10px;">
+				style="border: 0px; solid black; border-radius: 10px; background-color: transparent; padding: 10px;">
 				<div style="font-weight: bold;" class="text-center">
-					<h3 style="color: green;">Product Update Form</h3>
+					<h3 style="color: grey;">Product Update Form</h3>
 					<%
 					if (message != null) {
 					%>
-					<p style="color: blue;">
+					<p style="color: #5fda5f;">
 						<%=message%>
 					</p>
 					<%
@@ -57,19 +65,16 @@
 				<div></div>
 				<div class="row">
 					<div class="col-md-12 form-group">
-						<label for="last_name">Product Id</label> <input type="text"
+						<label for="last_name"></label> <input type="text"
 							placeholder="Enter Product Id" name="prodid" class="form-control"
 							id="last_name" required>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
-						<a href="adminViewProduct.jsp" class="btn btn-info">Cancel</a>
-					</div>
+				
 					<div class="col-md-6 text-center">
-						<button type="submit" class="btn btn-danger">Update
-							Product</button>
-					</div>
+    <button type="submit" class="btn" style="background-color: #5fda5f; color: white;">Update Product</button>
+</div>
+
 				</div>
 			</form>
 		</div>
