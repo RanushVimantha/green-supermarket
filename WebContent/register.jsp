@@ -3,12 +3,14 @@
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="registration.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -21,7 +23,10 @@
     <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
 </head>
 <body style="background: url('https://us.123rf.com/450wm/virtosmedia/virtosmedia2302/virtosmedia230282584/199292740-supermarket-shelves-with-products-and-blurred-background-shallow-depth-of-focus.jpg?ver=6') center center fixed; background-size: cover; margin: 0; padding: 0;">>
-    <%@ include file="header.jsp"%>
+    
+    <%@ include file="header2.jsp"%>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <%
         String message = request.getParameter("message");
     %>

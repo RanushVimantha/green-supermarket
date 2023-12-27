@@ -81,7 +81,7 @@ a {
 	text-decoration: none;
     position: absolute;
     right: 350px;
-    margin-top: -60px;
+    
     height: 45px;
     max-width: 685px;
     width: 100%;
@@ -91,6 +91,7 @@ a {
 }
 
 .nav.openSearch .search-box {
+	margin-top: 60px;
 	text-decoration: none;
     opacity: 1;
     pointer-events: auto;
@@ -117,7 +118,7 @@ a {
     padding: 0 15px 0 45px;
 }
 
-.nav-tabs:hover{
+.nav-pages:hover{
 	color: #fff;
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 	text-decoration: none;
@@ -126,7 +127,7 @@ a {
     margin-right: 10px;
 }
 
-.nav-tabs{
+.nav-pages{
 	text-decoration: none;
     transition: 0.3s;
     margin-left: 0px;

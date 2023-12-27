@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ page import="com.shashi.service.impl.*, com.shashi.service.*"%>
+<%@ page import="com.green.service.impl.*,com.green.service.*"%>
 
 <!DOCTYPE html>
 <html>
@@ -27,11 +27,11 @@
 		<a href="index.jsp" class="logo"><img src="images/logo.png" style="height: 60px;" alt=""></a>
 		<ul class="nav-links" style="font-size: 16px;">
 			<i class="uil uil-times navCloseBtn"></i>
-			<li class="nav-tabs"><a href="login.jsp">Login</a></li>
-			<li class="nav-tabs"><a href="register.jsp">Register</a></li>
-			<li class="nav-tabs"><a href="index.jsp">Products</a></li>
+			<li class="nav-pages"><a href="login.jsp">Login</a></li>
+			<li class="nav-pages"><a href="register.jsp">Register</a></li>
+			<li class="nav-pages"><a href="index.jsp">Products</a></li>
 			<div class="dropdown">
-				<li class="nav-tabs"><a href="#" data-toggle="dropdown" class="dropbtn">Categories</a>
+				<li class="nav-pages"><a href="#" data-toggle="dropdown" class="dropbtn">Categories</a>
 					<div class="dropdown-content">
 						<a href="index.jsp?type=Groceries">Groceries </a>
 						<a href="index.jsp?type=DairyandEggs">Dairy and Eggs</a>
@@ -44,14 +44,14 @@
 
 				</li>
 			</div>
-			<li class="nav-tabs"><a href="#">Contact Us</a></li>
+			<li class="nav-pages"><a href="#">Contact Us</a></li>
 		</ul>
-		<form action="index.jsp" method="get">
+		<form id="search" action="index.jsp" method="get">
 		<i class="uil uil-search search-icon" id="searchIcon"></i>
 		<div class="search-box">
-		<button type="submit" formaction="index.jsp">
+		<a onclick="document.getElementById('search').submit(); return false;">
 			<i class="uil uil-search search-icon"></i>
-		</button>
+		</a>
 			<input type="text" name="search" placeholder="Search here..."/>
 		</div>
 		</form>

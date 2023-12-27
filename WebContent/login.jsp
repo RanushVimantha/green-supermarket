@@ -5,12 +5,11 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/login.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
+ </head>
 <body style="background: url('https://www.visittci.com/core/graceway-gourmet-dairy_2048x1365.jpg') center center fixed; background-size: cover; margin: 0; padding: 0;">
-    <%@ include file="header.jsp"%>
-
+    <%@ include file="header2.jsp"%>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <%
         String message = request.getParameter("message");
     %>
