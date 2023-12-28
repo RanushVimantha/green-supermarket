@@ -39,13 +39,13 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: green; font-size: 24px; font-weight: bold;">UnShipped
+		style="color: #5fda5f; font-size: 24px; font-weight: bold; margin-top: 130px; margin-bottom: 35px">UnShipped
 		Orders</div>
 	<div class="container-fluid">
 		<div class="table-responsive ">
 			<table class="table table-hover table-sm">
 				<thead
-					style="background-color: #700fb7; color: white; font-size: 16px;">
+					style="background-color:#5fda5f; color: white; font-size: 16px;">
 					<tr>
 						<th>TransactionId</th>
 						<th>ProductId</th>
@@ -84,7 +84,7 @@
 						<td>READY_TO_SHIP</td>
 						<td><a
 							href="ShipmentServlet?orderid=<%=order.getTransactionId()%>&amount=<%=order.getAmount()%>&userid=<%=userId%>&prodid=<%=order.getProductId()%>"
-							class="btn btn-success">SHIP NOW</a></td>
+							class="btn btn-success" style="background-color:#5fda5f;">SHIP NOW</a></td>
 					</tr>
 
 					<%

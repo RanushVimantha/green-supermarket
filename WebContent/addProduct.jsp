@@ -47,7 +47,7 @@
 	<%
 	String message = request.getParameter("message");
 	%>
-	<div class="container">
+	<div class="container" style="margin-top: 130px; margin-bottom: 35px">
 		<div class="row"
 			style="margin-top: 3px; margin-left: 1px; margin-right: 1px;">
 			<form action="./AddProductSrv" method="post"

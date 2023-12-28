@@ -39,13 +39,13 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: green; font-size: 24px; font-weight: bold;">Stock
+		style="color: #5fda5f; font-size: 24px; font-weight: bold; margin-top: 130px; margin-bottom: 35px">Stock
 		Products</div>
 	<div class="container-fluid">
 		<div class="table-responsive ">
 			<table class="table table-hover table-sm">
 				<thead
-					style="background-color: #2c6c4b; color: white; font-size: 18px;">
+					style="background-color: #5fda5f; color: white; font-size: 18px;">
 					<tr>
 						<th>Image</th>
 						<th>ProductId</th>
@@ -70,7 +70,7 @@
 
 					<tr>
 						<td><img src="./ShowImage?pid=<%=product.getProdId()%>"
-							style="width: 50px; height: 50px;"></td>
+							style="width: auto; height: 60px;"></td>
 						<td><a
 							href="./updateProduct.jsp?prodid=<%=product.getProdId()%>"><%=product.getProdId()%></a></td>
 						<%

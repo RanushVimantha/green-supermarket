@@ -55,12 +55,12 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: black; font-size: 14px; font-weight: bold;"><%=message%></div>
+		style="color: black; font-size: 20px; font-weight: bold; margin-top: 130px; margin-bottom: 35px"><%=message%></div>
 	<!-- <script>document.getElementById('mycart').innerHTML='<i data-count="20" class="fa fa-shopping-cart fa-3x icon-white badge" style="background-color:#333;margin:0px;padding:0px; margin-top:5px;"></i>'</script>
  -->
 	<!-- Start of Product Items List -->
-	<div class="container">
-		<div class="row text-center">
+	<div class="container" style="justify-content: center; margin: 0% auto; width: 81%;">
+		<div class="row text-center" style="justify-content: center; margin: 0% auto;">
 
 			<%
 			for (ProductBean product : products) {

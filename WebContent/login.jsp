@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/login.css">
  </head>
 <body style="background: url('https://www.visittci.com/core/graceway-gourmet-dairy_2048x1365.jpg') center center fixed; background-size: cover; margin: 0; padding: 0;">
-    <%@ include file="header2.jsp"%>
+    <%@ include file="header.jsp"%>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <%

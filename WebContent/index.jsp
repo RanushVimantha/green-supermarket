@@ -48,7 +48,7 @@
 	}
 	%>
 
-	<jsp:include page="header2.jsp" />
+	<jsp:include page="header.jsp" />
 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">

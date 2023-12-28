@@ -5,15 +5,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Header</title>
+<title>Logout Header</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/changes.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="background-color: #E6F9E6;">
-
+	<!--Company Header Starting  -->
+	<div class="container-fluid text-center"
+		style="margin-top: 49px; background-color: #33cc33; color: white; padding: 5px;">
+		<h2>Green Supermarket</h2>
+		<h6>Our deals are as juicy as our fruits!</h6>
+		<form class="form-inline" action="index.jsp" method="get">
+			<div class="input-group">
+				<input type="text" class="form-control" size="50" name="search"
+					placeholder="Search Items" required>
+				<div class="input-group-btn">
+					<input type="submit" class="btn btn-danger" value="Search" />
+				</div>
+			</div>
+		</form>
+		<p align="center"
+			style="color: blue; font-weight: bold; margin-top: 5px; margin-bottom: 5px;"
+			id="message"></p>
+	</div>
+	<!-- Company Header Ending -->
 
 	<%
 	/* Checking the user credentials */
@@ -22,39 +46,37 @@
 	%>
 
 	<!-- Starting Navigation Bar -->
-	<nav class="nav">
-		<i class="uil uil-bars navOpenBtn"style="padding-top: 15px; right:10px;"></i>
-		<a href="index.jsp" class="logo"><img src="images/logo.png" style="height: 60px; padding-bottom: 10px;" alt=""></a>
-		<ul class="nav-links" style="font-size: 16px;">
-			<i class="uil uil-times navCloseBtn"></i>
-			<li class="nav-pages"><a href="login.jsp">Login</a></li>
-			<li class="nav-pages"><a href="register.jsp">Register</a></li>
-			<li class="nav-pages"><a href="index.jsp">Products</a></li>
-			<div class="dropdown">
-				<li class="nav-pages"><a href="#" data-toggle="dropdown" class="dropbtn">Categories</a>
-					<div class="dropdown-content">
-						<a href="index.jsp?type=Groceries">Groceries </a>
-						<a href="index.jsp?type=DairyandEggs">Dairy and Eggs</a>
-						<a href="index.jsp?type=FrozenFoods">Frozen Foods</a>
-						<a href="index.jsp?type=Beverages">Beverages</a>
-						<a href="index.jsp?type=Snacks">Snacks</a>
-						<a href="index.jsp?type=PersonalCare">Personal Care</a>
-						<a href="index.jsp?type=CleaningSupplies">Cleaning Supplies</a>
-					</div>
-
-				</li>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.jsp"><span
+					class="glyphicon glyphicon-home">&nbsp;</span>Shopping Center</a>
 			</div>
-			<li class="nav-pages"><a href="#">Contact Us</a></li>
-		</ul>
-		<form id="search" action="index.jsp" method="get">
-		<i class="uil uil-search search-icon" id="searchIcon"></i>
-		<div class="search-box">
-		<a onclick="document.getElementById('search').submit(); return false;">
-			<i class="uil uil-search search-icon"></i>
-		</a>
-			<input type="text" name="search" placeholder="Search here..."/>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.jsp">Login</a></li>
+					<li><a href="register.jsp">Register</a></li>
+					<li><a href="index.jsp">Products</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="index.jsp?type=Groceries">Groceries</a></li>
+							<li><a href="index.jsp?type=DairyandEggs">Dairy and Eggs</a></li>
+							<li><a href="index.jsp?type=FrozenFoods">Frozen Foods</a></li>
+							<li><a href="index.jsp?type=Beverages">Beverages</a></li>
+							<li><a href="index.jsp?type=Snacks">Snacks</a></li>
+							<li><a href="index.jsp?type=PersonalCare">Personal Care</a></li>
+							<li><a href="index.jsp?type=CleaningSupplies">Cleaning Supplies</a></li>
+						</ul></li>
+				</ul>
+			</div>
 		</div>
-		</form>
 	</nav>
 	<%
 	} else if ("customer".equalsIgnoreCase(userType)) { //CUSTOMER HEADER
@@ -168,32 +190,5 @@
 	}
 	%>
 	<!-- End of Navigation Bar -->
-	
-
-	<script>
-		const nav = document.querySelector(".nav"),
-			searchIcon = document.querySelector("#searchIcon"),
-			navOpenBtn = document.querySelector(".navOpenBtn"),
-			navCloseBtn = document.querySelector(".navCloseBtn");
-
-		searchIcon.addEventListener("click", () => {
-			nav.classList.toggle("openSearch");
-			nav.classList.remove("openNav");
-			if (nav.classList.contains("openSearch")) {
-				return searchIcon.classList.replace("uil-search", "uil-times");
-			}
-			searchIcon.classList.replace("uil-times", "uil-search");
-		});
-
-		navOpenBtn.addEventListener("click", () => {
-			nav.classList.add("openNav");
-			nav.classList.remove("openSearch");
-			searchIcon.classList.replace("uil-times", "uil-search");
-		});
-		navCloseBtn.addEventListener("click", () => {
-			nav.classList.remove("openNav");
-		});
-	</script>
-
 </body>
 </html>

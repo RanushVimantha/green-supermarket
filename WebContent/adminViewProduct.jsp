@@ -61,7 +61,7 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: black; font-size: 14px; font-weight: bold;"><%=message%></div>
+		style="color: black; font-size: 14px; font-weight: bold; margin-top: 130px; margin-bottom: 35px"><%=message%></div>
 	<!-- Start of Product Items List -->
 	<div class="container" style="background-color: #E6F9E6;">
 		<div class="row text-center">

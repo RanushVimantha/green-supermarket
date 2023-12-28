@@ -47,7 +47,7 @@
 	<%
 	String message = request.getParameter("message");
 	%>
-	<div class="container">
+	<div class="container" style="margin-top: 130px; margin-bottom: 35px">
 		<div class="row"
 			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
 			<form action="./RemoveProductSrv" method="post"

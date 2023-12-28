@@ -29,14 +29,14 @@
 	}
 	%>
 
-	<jsp:include page="header2.jsp" />
+	<jsp:include page="header.jsp" />
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-	<div class="products" style="background-color: #E6F9E6;">
+	<div class="products" style="background-color: #E6F9E6; style="margin-top: 130px; margin-bottom: 35px">
 
-		<div class="tab" align="center">
+		<div class="tab" align="center" style="margin-top: 130px; margin-bottom: 35px">
 			<form>
 				<button type="submit" formaction="adminViewProduct.jsp">View
 					products</button>

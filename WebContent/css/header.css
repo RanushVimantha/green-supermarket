@@ -152,11 +152,12 @@ a {
   .dropdown-content {
     display: none;
     text-decoration: none;
+    justify-content: center;
     position: absolute;
     top: 39px;
     border-radius: 20px;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 165px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 5;
   }
