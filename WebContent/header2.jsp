@@ -23,8 +23,8 @@
 
 	<!-- Starting Navigation Bar -->
 	<nav class="nav">
-		<i class="uil uil-bars navOpenBtn"></i>
-		<a href="index.jsp" class="logo"><img src="images/logo.png" style="height: 60px;" alt=""></a>
+		<i class="uil uil-bars navOpenBtn"style="padding-top: 15px; right:10px;"></i>
+		<a href="index.jsp" class="logo"><img src="images/logo.png" style="height: 60px; padding-bottom: 10px;" alt=""></a>
 		<ul class="nav-links" style="font-size: 16px;">
 			<i class="uil uil-times navCloseBtn"></i>
 			<li class="nav-pages"><a href="login.jsp">Login</a></li>

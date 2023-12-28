@@ -52,6 +52,7 @@ a {
 
 }
 
+
 .nav .nav-links {
 	text-decoration: none;
     column-gap: 50px;
@@ -81,7 +82,6 @@ a {
 	text-decoration: none;
     position: absolute;
     right: 350px;
-    
     height: 45px;
     max-width: 685px;
     width: 100%;
@@ -91,7 +91,7 @@ a {
 }
 
 .nav.openSearch .search-box {
-	margin-top: 60px;
+	margin-top: 0px;
 	text-decoration: none;
     opacity: 1;
     pointer-events: auto;
@@ -102,7 +102,7 @@ a {
     position: absolute;
     margin-top: 30px;
     left: -10px;
-    top: 50%;
+    top: 20%;
     color: #5fda5f;
     transform: translateY(-50%);
 }
@@ -225,6 +225,7 @@ a {
     text-decoration: none;
         padding: 15px 20px;
     }
+    	
 
     .nav .nav-links {
     text-decoration: none;
@@ -252,6 +253,7 @@ a {
     }
 
     .nav .navOpenBtn {
+    
     text-decoration: none;
         color: #fff;
         font-size: 20px;
