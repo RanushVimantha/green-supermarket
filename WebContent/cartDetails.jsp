@@ -70,7 +70,7 @@
 
             <!-- Start of New Product Items List -->
 
-            <div class="CartContainer">
+            <div class="CartContainer" style="margin-top: 130px; margin-bottom: 35px">
                 <div class="Header">
                     <h3 class="Heading">Shopping Cart</h3>
                 </div>

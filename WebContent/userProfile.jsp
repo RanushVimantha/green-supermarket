@@ -40,7 +40,7 @@
 
 	<jsp:include page="header.jsp" />
 
-	<div class="container bg-secondary">
+	<div class="container bg-secondary" style="margin-top: 130px; margin-bottom: 35px">
 		<div class="row">
 			<div class="col">
 				<nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
