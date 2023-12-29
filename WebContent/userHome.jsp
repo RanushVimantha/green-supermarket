@@ -8,6 +8,27 @@
 <title>Green SuperMarket</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Primary Meta Tags -->
+<title>Green Supermarket - Online Shopping for Quality Products</title>
+<meta name="title" content="Green Supermarket - Online Shopping for Quality Products">
+<meta name="description" content="Experience convenient and secure online shopping at Green Supermarket. Explore a massive range of quality products, enjoy online payment options, and receive real-time updates on your orders.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://nsbm.redwindinternational.com/">
+<meta property="og:title" content="Green Supermarket - Online Shopping for Quality Products">
+<meta property="og:description" content="Experience convenient and secure online shopping at Green Supermarket. Explore a massive range of quality products, enjoy online payment options, and receive real-time updates on your orders.">
+<meta property="og:image" itemprop="image" content="https://nsbm.redwindinternational.com/images/meta_img.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://nsbm.redwindinternational.com/">
+<meta property="twitter:title" content="Green Supermarket - Online Shopping for Quality Products">
+<meta property="twitter:description" content="Experience convenient and secure online shopping at Green Supermarket. Explore a massive range of quality products, enjoy online payment options, and receive real-time updates on your orders.">
+<meta property="twitter:image" content="https://nsbm.redwindinternational.com/images/meta_img.png">
+
+
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/changes.css">
