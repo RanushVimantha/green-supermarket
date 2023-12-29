@@ -11,14 +11,14 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://nsbm.redwindinternational.com/">
+<meta property="og:url" content="https://nsbm.redwindinternational.com/">
 <meta property="og:title" content="Green Supermarket - Online Shopping for Quality Products">
 <meta property="og:description" content="Experience convenient and secure online shopping at Green Supermarket. Explore a massive range of quality products, enjoy online payment options, and receive real-time updates on your orders.">
 <meta property="og:image" itemprop="image" content="https://nsbm.redwindinternational.com/images/meta_img.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://nsbm.redwindinternational.com/">
+<meta property="twitter:url" content="https://nsbm.redwindinternational.com/">
 <meta property="twitter:title" content="Green Supermarket - Online Shopping for Quality Products">
 <meta property="twitter:description" content="Experience convenient and secure online shopping at Green Supermarket. Explore a massive range of quality products, enjoy online payment options, and receive real-time updates on your orders.">
 <meta property="twitter:image" content="https://nsbm.redwindinternational.com/images/meta_img.png">
