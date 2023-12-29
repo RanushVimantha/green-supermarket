@@ -104,7 +104,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   /*-- end reset --*/
   body {
-    background: #E6F9E6;
+    background: rgb(0, 0, 0);
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, ##E6F9E6, ##E6F9E6);
     background: -moz-linear-gradient(to top, #E6F9E6, #E6F9E6);
