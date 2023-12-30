@@ -146,6 +146,7 @@
                     </div>
                 <form method="post">
                     <button class="button" formaction="payment1.jsp?amount=<%=totAmount%>">Checkout</button>
+
                 </form>
                 </div>
 <%
