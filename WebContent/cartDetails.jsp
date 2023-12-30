@@ -91,7 +91,7 @@
         %>
         
             <%-- Store cart details in session --%>
-    <% session.setAttribute("cartItems", cartItems);
+    <% 
        session.setAttribute("totAmount", totAmount);
     %>
         
