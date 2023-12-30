@@ -45,50 +45,45 @@
                 <li></li>
             </ul>
             <div class="main-agileinfo">
-                <div class="agileits-top">
-                    <form action="./RegisterSrv" method="post">
-                        <div class="row">
-                            <div class="col-md-6 form-group" style="color: white;">
-                                <label for="first_name">Name</label> <input type="text"
-                                    name="username" class="form-control" id="first_name"
-                                    required>
-                            </div>
-                            <div class="col-md-6 form-group" style="color: white;">
-                                <label for="last_name"><strong>Email</strong></label> <input
-                                    type="email" name="email" class="form-control" id="last_name" required>
-                            </div>
-                        </div>
-                        <div class="form-group" style="color: white;">
-                            <label for="last_name">Address</label>
-                            <textarea name="address" class="form-control" id="last_name" required
-                                style="background-color: rgba(255, 255, 255, 0.2);"></textarea>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-group" style="color: white;">
-                                <label for="last_name">Mobile</label> <input type="number"
-                                    name="mobile" class="form-control" id="last_name" required
-                                    style="background-color: rgba(255, 255, 255, 0.2);">
-                            </div>
-                            <div class="col-md-6 form-group" style="color: white;">
-                                <label for="last_name">Postal Code</label> <input type="number"
-                                    name="pincode" class="form-control" id="last_name" required
-                                    style="background-color: rgba(255, 255, 255, 0.2);">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-group" style="color: white;">
-                                <label for="password">Password</label> <input type="password"
-                                    name="password" class="form-control" required>
-                            </div>
-                            <div class="col-md-6 form-group" style="color: white;">
-                                <label for="confirmPassword">Confirm Password</label> <input
-                                    type="password" name="confirmPassword" class="form-control"
-                                    required>
-                            </div>
-                        </div>
+    <div class="agileits-top">
+        <form action="./RegisterSrv" method="post">
+            <div class="row">
+                <div class="col-md-6 form-group" style="color: white;">
+                    <label for="first_name">Name</label>
+                    <input type="text" name="username" class="form-control" id="first_name" required style="font-weight: bold;">
+                </div>
+                <div class="col-md-6 form-group" style="color: white;">
+                    <label for="last_name"><strong>Email</strong></label>
+                    <input type="email" name="email" class="form-control" id="last_name" required style="font-weight: bold;">
+                </div>
+            </div>
+            <div class="form-group" style="color: white;">
+                <label for="address">Address</label>
+                <textarea name="address" class="form-control" id="address" required style="color: white; background-color: rgba(255, 255, 255, 0.2); font-weight: bold;'"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group" style="color: white;">
+                    <label for="mobile">Mobile</label>
+                    <input type="number" name="mobile" class="form-control" id="mobile" required style="color: white; background-color: rgba(255, 255, 255, 0.2); font-weight: bold;">
+                </div>
+                <div class="col-md-6 form-group" style="color: white;">
+                    <label for="postal_code">Postal Code</label>
+                    <input type="number" name="pincode" class="form-control" id="postal_code" required style="color: white; background-color: rgba(255, 255, 255, 0.2); font-weight: bold;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group" style="color: white;">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" required style="font-weight: bold;">
+                </div>
+                <div class="col-md-6 form-group" style="color: white;">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" class="form-control" required style="font-weight: bold;">
+                </div>
+            </div>
                         <input type="submit" value="SIGNUP">
                         <% if (message != null) { %>
-                            <p style="color: #5fda5f;">
+                            <p style="color: white;">
                                 <%= message %>
                             </p>
                         <% } %>
