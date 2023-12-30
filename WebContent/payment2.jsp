@@ -63,9 +63,9 @@
 		<form class="form" id="payHereForm" method="post" action="https://sandbox.payhere.lk/pay/checkout">
 
 			<input type="hidden" name="merchant_id" value="1225349"> <!-- Replace your Merchant ID -->
-			<input type="hidden" name="return_url" value="http://sample.com/return">
-			<input type="hidden" name="cancel_url" value="http://sample.com/cancel">
-			<input type="hidden" name="notify_url" value="http://sample.com/notify">
+			<input type="hidden" name="return_url" value="https://nsbm.netchx.host/orderDetails.jsp">
+			<input type="hidden" name="cancel_url" value="https://nsbm.netchx.host/cartDetails.jsp">
+			<input type="hidden" name="notify_url" value="https://nsbm.netchx.host/OrderServlet">
 
 			<!-- Item Details -->
 			<input type="hidden" name="order_id" value="Green Supermarket"> <!-- Can show the orderid if u want -->
