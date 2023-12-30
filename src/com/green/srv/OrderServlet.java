@@ -26,6 +26,7 @@ public class OrderServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		String userName = (String) session.getAttribute("username");
 		String password = (String) session.getAttribute("password");
+		double totAmount = (double) session.getAttribute("totAmount");
 
 		if (userName == null || password == null) {
 
@@ -38,7 +39,7 @@ public class OrderServlet extends HttpServlet {
 		PrintWriter pw = response.getWriter();
 		response.setContentType("text/html");
 
-		RequestDispatcher rd = request.getRequestDispatcher("orderDetails.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("payment2.jsp?amount=" + totAmount);
 
 		rd.include(request, response);
 
