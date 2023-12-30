@@ -35,6 +35,10 @@
 	if (sAmount != null) {
 		amount = Double.parseDouble(sAmount);
 	}
+	UserService dao = new UserServiceImpl();
+	UserBean user = dao.getUserDetails(userName, password);
+	if (user == null)
+		user = new UserBean("Test User", 98765498765L, "test@gmail.com", "ABC colony, Patna, bihar", 87659, "lksdjf");
 	%>
 
 
@@ -53,12 +57,12 @@
     <input type="hidden" name="items" value="Green Supermarket" readonly>
     
     </br></br>Customer Details
-    <input type="text" name="first_name" value="Saman">
-    <input type="text" name="last_name" value="Perera">
-    <input type="text" name="email" value="samanp@gmail.com">
-    <input type="text" name="phone" value="0771234567">
-    <input type="text" name="address" value="No.1, Galle Road">
-    <input type="text" name="city" value="Colombo">
+    <input type="text" name="first_name" value="">
+    <input type="text" name="last_name" value="">
+    <input type="text" name="email" value="<%=user.getEmail()%>">
+    <input type="text" name="phone" value="<%=user.getMobile()%>">
+    <input type="text" name="address" value="<%=user.getAddress()%>">
+    <input type="hidden" name="city" value="Colombo">
     <input type="hidden" name="country" value="Sri Lanka">
     <input type="hidden" name="hash" value="<%=HashCodeGenerator.generatecode("Green Supermarket", amount, "NTU3MzEzNTEyNDI2OTE0OTEyMjMwMTYzMTU0ODI0NTMyMTczMTM=", "1225349", "LKR")%>">
     <!-- Replace with generated hash -->
