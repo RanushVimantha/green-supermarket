@@ -57,7 +57,7 @@
     <input type="hidden" name="items" value="Green Supermarket" readonly>
     
     </br></br>Customer Details
-    <input type="text" name="first_name" value="">
+    <input type="text" name="first_name" value="<%=user.getName()%>">
     <input type="text" name="last_name" value="">
     <input type="text" name="email" value="<%=user.getEmail()%>">
     <input type="text" name="phone" value="<%=user.getMobile()%>">
