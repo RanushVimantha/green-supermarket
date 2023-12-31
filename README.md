@@ -1,10 +1,10 @@
 # green-supermarket
 
-##Abstract 
+#Abstract 
 
 This project is a website about a green supermarket. In the age of modern times, people try to save their time and effort by making their works easy. Through e-commerce platform, makes it easier for customers in online shopping methods from their homes. It includes online payment methods, feedback on the website, and notification of ordering, delivering, or cancelling the order as well. The project scope of the website aims to newly promoted website with the modern concept of online shopping in supermarkets with secure online payment methods without clash in shopping. customers get real-time updates on the products with high-technology in-store navigation. The commercial value of the green supermarket is customer reviews and ratings. It may attract a high customer base, can produce online marketing campaigns with brand images and the most important point is customers can shop at any time. Through this website, the aim of the business objectives is, mission of targeting the audience in user user-friendly manner. And supply the customer with quality products that they purchased. Make a better platform for customers to shop online. Customers can access through any device laptops, tablets, and smartphones including fast responses and loading time, and secure with the details of the customers. This website has user authentication to create their accounts login and be registered with server infrastructure, a responsive user interface, a Database Management system, SMS, and an E-mail notification system. The backbone of the revamped system is Java Swing, JSP, and Java servlet are used as technologies. 
 
 
-##Project Scope
+#Project Scope
 
 Our deals are as juicy as our fruits This scope of the project outlines and aims to reflect certain preferences through the website. Has witnessed failures over the years therefore Green Supermarket. Introducing fundamental features to the newly upgraded website. In today’s fast-moving world should revitalize and modernize the concepts of online preferences of the Supermarket industry. The key objectives include a secure online payment handling process, the implementation of avoiding shopping collisions, the development of visualizing customer feedback, and the creation of effective notification alters for ordering, payments, delivering, and cancelling options for orders. 
