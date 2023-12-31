@@ -64,7 +64,7 @@
             <%
                 if (message != null) {
             %>
-            <p style="color: blue;">
+            <p style="color: #5fda5f;">
                 <%=message%>
             </p>
             <%
