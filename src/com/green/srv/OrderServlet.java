@@ -40,7 +40,7 @@ public class OrderServlet extends HttpServlet {
 		response.setContentType("text/html");
 
 		RequestDispatcher rd = request.getRequestDispatcher("payment2.jsp?amount=" + totAmount);
-		session.invalidate();
+		
 
 		rd.include(request, response);
 

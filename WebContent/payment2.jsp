@@ -125,7 +125,7 @@
 		<!-- Passing Values -->
 		<input type="hidden" name="city" value="Colombo">
 		<input type="hidden" name="country" value="Sri Lanka">
-		<input type="hidden" name="hash" value="<%=HashCodeGenerator.generatecode("Green Supermarket", amount, "NTU3MzEzNTEyNDI2OTE0OTEyMjMwMTYzMTU0ODI0NTMyMTczMTM=", "1225349", "LKR")%>">
+		<input type="hidden" name="hash" value="<%=HashCodeGenerator.generatecode("Green Supermarket", amount, "MjQ0NTU5NzczNDM2NzUyOTM4MDIxMzE1NDI2NTA5MTY1NDA2NzQzNA==", "1225349", "LKR")%>">
 		<!-- Replace with generated hash -->
 		<input type="hidden" name="amount" value="<%=amount%>" readonly>
 		<input type="hidden" name="currency" value="LKR">

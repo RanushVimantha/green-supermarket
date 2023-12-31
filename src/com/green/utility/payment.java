@@ -17,7 +17,7 @@ import java.text.DecimalFormat;
 public class payment {
 	public static void main(String[] args) {
         String merahantID     = "1225349";
-        String merchantSecret = "NTU3MzEzNTEyNDI2OTE0OTEyMjMwMTYzMTU0ODI0NTMyMTczMTM=";
+        String merchantSecret = "MjQ0NTU5NzczNDM2NzUyOTM4MDIxMzE1NDI2NTA5MTY1NDA2NzQzNA==";
         String orderID        = "12345";
         double amount         = 100;
         String currency       = "LKR";
