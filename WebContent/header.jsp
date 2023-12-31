@@ -44,7 +44,7 @@
 
 				</li>
 			</div>
-			<li class="nav-pages"><a href="#">Contact Us</a></li>
+			<li class="nav-pages"><a href="contactus.jsp">Contact Us</a></li>
 		</ul>
 		<form id="search" action="index.jsp" method="get">
 		<i class="uil uil-search search-icon" id="searchIcon"></i>
